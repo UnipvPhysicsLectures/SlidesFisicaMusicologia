@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Fisica per Musicologia: Cinematica</title>
+
+	<meta name="description" content="Introduzione">
+	<meta name="author" content="Giovanni Pellegrini">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="../reveal.js/dist/theme/league.css" id="theme">
+	<link rel="stylesheet" href="../reveal.js/plugin/highlight/zenburn.css">
+
+	<script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="../reveal.js/plugin/math/math.js"></script>
+	<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+ 	<script src="../reveal.js-plugins/menu/menu.js"></script>
+	<script src="../reveal.js-plugins/chalkboard/plugin.js"></script>
+	<script src="../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="../reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<!-- Meccanica -->
+			<section>
+				<h4>Meccanica: corpi in moto, caratteristiche e cause</h4>
+				<p class="fragment fade-in" data-fragment-index="0"> \( \Downarrow \)</p>
+				<h4 class="fragment fade-in" data-fragment-index="0"> Dinamica: relazione tra moto e forze che lo causano</h4>
+				<h4 class="fragment fade-in" data-fragment-index="1"> \( \Downarrow \)</h4>
+				<h4 class="fragment fade-in" data-fragment-index="1">Cinematica: studio del moto a prescindere dalle cause</h4>
+				<h4 class="fragment fade-in" data-fragment-index="2"> \( \Downarrow \)</h4>
+				<h4 class="fragment fade-in" data-fragment-index="2">Cinematica del punto</h4>
+				<h4 class="fragment fade-in" data-fragment-index="3"> \( \Downarrow \)</h4>
+				<h4 class="fragment fade-in" data-fragment-index="3">Cinematica del punto in una dimensione</h4>
+			</section>
+
+			<!-- Grandezze Fondamentali -->
+			<section>
+				<h2>Cinematica: grandezze fondamentali</h2>
+				<ul>
+					<li style="font-weight: bold">Spazio</li>
+					<li style="font-weight: bold">Tempo</li>
+					<li>Velocità</li>
+					<li>Accelerazione</li>
+				</ul>
+			</section>
+
+			<!-- Sistemi di riferimento -->
+			<section>
+				<h2>Sistemi di riferimento: 1</h2>
+				<video class="r-stretch" controls loop>
+					<source src="resources/ReferenceFrame.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				  </video>
+			</section>
+
+			<!-- Sistemi di riferimento -->
+			<section>
+				<h2>Sistemi di riferimento: 2</h2>
+				<div class="r-stack">
+					<p class="fragment fade-out" data-fragment-index="0"> Coordinate cartesiane</p>
+					<p class="fragment current-visible" data-fragment-index="0"> Coordinate sferiche</p>
+					<p class="fragment current-visible" data-fragment-index="1"> Coordinate cilindriche</p>
+				</div>
+				<div class="r-stack r-stretch">
+					<img class="fragment fade-out" data-fragment-index="0" style="height: 400px;" src="resources/sistema cartesiano.svg">
+					<img class="fragment current-visible" data-fragment-index="0" style="height: 400px; "src="resources/sistema_sferico.svg">
+					<img class="fragment current-visible" data-fragment-index="1" style="height: 400px;" src="resources/sistema_cilindrico.svg">
+				</div>
+			</section>
+
+			<!-- Spostamento vs distanza -->
+			<section>
+				<h3>Cinematica 1D: Spostamento vs distanza</h3>
+				<ul style="font-size: x-large;">
+					<li>\( x_{\mathrm{CasaAmico}} = 0 \, (km) = 0 \, (m) \)</li>
+					<li>\( x_{\mathrm{CasaMia}} = 2.1 \, (km) = 2100 \, (m) \)</li>
+					<li>\( x_{\mathrm{Drogheria}} = 6.4 \, (km) = 6400 \, (m) \)</li>
+				</ul>
+				<img src="resources/cinematica_1d.png" alt="cinematica_1d">
+			</section>
+			
+			<!-- Velocita media-->
+			<section>
+				<h2>velocità media</h2>
+				<ul style="font-size: x-large;">
+					<li>\( \Delta x_{1} = 4 \, (km) = 4000 \, (m) \)</li>
+					<li>\( \Delta x_{2} = 4 \, (km) = 4000 \, (m) \)</li>
+					<li>\( v_{1} = 30 \, (km/h) \approx 8.3 \, (m/s) \)</li>
+					<li>\( v_{2} = 40 \, (km/h) \approx 13.9 \, (m/s) \)</li>
+				</ul>
+				<img src="resources/velocita_media.png" alt="velocita_media">
+			</section>
+
+			<!-- Velocita media vs velocita scalare media-->
+			<section>
+				<h3>velocità scalare media vs velocità media</h3>
+				<ul style="font-size: x-large;">
+					<li>\( \Delta x_{1} = \Delta x_{2} = 100 \, (m) \)</li>
+					<li>\( v_{1} = 10 \, (m/s) \)</li>
+					<li>\( v_{2} = 5  \, (m/s) \)</li>
+				</ul>
+				<img class="r-stretch" src="resources/velocita_media2.png" alt="velocita_media2">
+			</section>
+
+
+			<!-- Interpretazione grafica velocita' media-->
+			<section>
+				<h3>interpretazione grafica della velocità media</h3>
+				<img class="r-stretch" src="resources/velocita_media3.png" alt="velocita_media3">
+			</section>
+
+			<!-- Interpretazione grafica velocita' media-->
+			<section>
+				<h2>velocità istantanea</h2>
+				<p>\[  v(t) = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}= x'(t) = \frac{\mathrm{d}x(t)}{\mathrm{d}t} \]</p>
+				<img class="r-stretch" src="resources/velocita_istantanea.png" alt="velocita_istantanea">
+			</section>
+
+			<!-- Interpretazione grafica velocita' media-->
+			<section>
+				<h3>velocità media vs velocità istantanea</h3>
+				<p>\[ \frac{\Delta x}{\Delta t} \, \mathrm{vs} \, \frac{\mathrm{d}x(t)}{\mathrm{d}t} \]</p>
+				<img class="r-stretch" src="resources/media_vs_istantanea.png" alt="media_vs_istantanea">
+			</section>
+
+			<!-- Interpretazione grafica velocita' media-->
+			<section>
+				<h3>accelerazione media vs accelerazione istantanea</h3>
+				<p>\( a_{\mathrm{m}} = \frac{\Delta v}{\Delta t} \)</p>
+				<p>\( a(t) = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t}= v'(t) = \frac{\mathrm{d}v(t)}{\mathrm{d}t} \)</p>
+				<img class="r-stretch" src="resources/acc_media_vs_istantanea.png" alt="acc_media_vs_istantanea">
+			</section>
+
+			<!-- Interpretazione grafica velocita' media-->
+			<section>
+				<h3>accelerazione e velocità</h3>
+				<!-- <p>\( a_{\mathrm{m}} = \frac{\Delta v}{\Delta t} \)</p>
+				<p>\( a(t) = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t}= v'(t) = \frac{\mathrm{d}v(t)}{\mathrm{d}t} \)</p> -->
+				<img class="r-stretch" src="resources/verso_a_v.png" alt="verso_a_v">
+			</section>
+
+			<!-- Interpretazione grafica velocita' media-->
+			<section>
+				<h3>\( x(t), \, v(t), a(t) \Rightarrow \) Integrali e derivate</h3>
+				<table style="width:800px;">
+					<thead>
+						<tr>
+							<td style="text-align: center;">Derivate</td>
+							<td style="text-align: center;">Integrali</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="text-align: center;">\( x(t) \)</td>
+							<td style="text-align: center;">\( x(t) \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;" >\( \Downarrow \, \frac{dx(t)}{dt} \, \Downarrow \)</td>
+							<td style="text-align: center;">\( \Uparrow \, \int v(t) dt \, \Uparrow\)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( v(t) \)</td>
+							<td style="text-align: center;">\( v(t) \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( \Downarrow \, \frac{dv(t)}{dt} \, \Downarrow\)</td>
+							<td style="text-align: center;">\( \Uparrow \, \int a(t) dt \, \Uparrow\)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( a(t) \)</td>
+							<td style="text-align: center;">\( a(t) \)</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Moto uniformemente accelerato-->
+			<section>
+				<h3>Moto uniformemente accelerato</h3>
+				<table style="width:900px; font-size: xx-large;">
+					<thead>
+						<tr>
+							<td style="text-align: center;">Integrali</td>
+							<td style="text-align: center;">Derivate</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="text-align: center;">\( a(t) = a \)</td>
+							<td style="text-align: center;">\( a(t) = a \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( \Downarrow \, \int_{0}^{t} a(t) dt \, \Downarrow\)</td>
+							<td style="text-align: center;" >\( \Uparrow \, \frac{dv(t)}{dt} \, \Uparrow \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( v(t) = v_{0} + at \)</td>
+							<td style="text-align: center;">\( v(t) = v_{0} + at \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( \Downarrow \, \int_{0}^{t} v(t) dt  \, \Downarrow\)</td>
+							<td style="text-align: center;">\( \Uparrow \, \frac{dx(t)}{dt} \, \Uparrow\)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( x(t) = x_{0} + v_{0}t + \frac{1}{2}a t^{2} \)</td>
+							<td style="text-align: center;">\( x(t) = x_{0} + v_{0}t + \frac{1}{2}a t^{2} \)</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Moto costante-->
+			<section>
+				<h2>Moto Costante</h2>
+				<video class="r-stretch" src="resources/StaticMotion.mp4" controls loop></video>
+			</section>
+
+			<!-- Moto rettilineo uniforme-->
+			<section>
+				<h2>Moto Rettilineo uniforme</h2>
+				<video class="r-stretch" src="resources/UniformSpeedMotion.mp4" controls loop></video>
+			</section>
+
+			<!-- Moto rettilineo uniforme-->
+			<section>
+				<h2>Moto uniformemente accelerato</h2>
+				<video class="r-stretch" src="resources/UniformAccMotion.mp4" controls loop></video>
+			</section>
+
+			<!-- Moto uniformemente accelerato-->
+			<section>
+				<h3>Caduta libera</h3>
+				<p>\( g = 9.81 \, (m/s^2)\) accelerazione di gravità</p>
+				<table style="width:900px; font-size: xx-large;">
+					<thead>
+						<tr>
+							<td style="text-align: center;">Integrali</td>
+							<td style="text-align: center;">Derivate</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="text-align: center;">\( a(t) = -g \)</td>
+							<td style="text-align: center;">\( a(t) = -g \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( \Downarrow \, \int_{0}^{t} a(t) dt \, \Downarrow\)</td>
+							<td style="text-align: center;" >\( \Uparrow \, \frac{dv(t)}{dt} \, \Uparrow \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( v(t) = v_{0} - gt \)</td>
+							<td style="text-align: center;">\( v(t) = v_{0} - gt \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( \Downarrow \, \int_{0}^{t} v(t) dt  \, \Downarrow\)</td>
+							<td style="text-align: center;">\( \Uparrow \, \frac{dx(t)}{dt} \, \Uparrow\)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( x(t) = x_{0} + v_{0}t - \frac{1}{2}g t^{2} \)</td>
+							<td style="text-align: center;">\( x(t) = x_{0} + v_{0}t - \frac{1}{2}g t^{2} \)</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- Moto armonico -->
+			<section>
+				<h3>Moto Armonico</h3>
+				<table style="width:1000px; font-size: xx-large;">
+					<thead>
+						<tr>
+							<td style="text-align: center;">Derivate</td>
+							<td style="text-align: center;">Integrali</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="text-align: center;">\( x(t) = A sin(\omega t + \phi) \)</td>
+							<td style="text-align: center;">\( x(t) = A sin(\omega t + \phi) \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;" >\( \Downarrow \, \frac{dx(t)}{dt} \, \Downarrow \)</td>
+							<td style="text-align: center;">\( \Uparrow \, \int_{0}^{t} v(t) dt \, \Uparrow\)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( v(t) = \omega A cos(\omega t + \phi) \)</td>
+							<td style="text-align: center;">\( v(t) = \omega A cos(\omega t + \phi) \)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( \Downarrow \, \frac{dv(t)}{dt} \, \Downarrow\)</td>
+							<td style="text-align: center;">\( \Uparrow \, \int_{0}^{t} a(t) dt \, \Uparrow\)</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">\( a(t) = - \omega^{2} A sin(\omega t + \phi)\)</td>
+							<td style="text-align: center;">\( a(t) = - \omega^{2} A sin(\omega t + \phi)\)</td>
+						</tr>
+					</tbody>
+				</table>
+				<p style="font-size: x-large;">\( A \Rightarrow  Ampiezza \) \( \;\;\;\; \omega = 2 \pi f = \frac{2 \pi}{T} \Rightarrow  Frequenza \, Angolare \) \( \;\;\;\; \phi \Rightarrow  Fase \)</p>
+			</section>
+
+			<!-- Moto armonico-->
+			<section>
+				<h2>Esempio di moto armonico: 1</h2>
+				<video class="r-stretch" src="resources/SimpleHarmonicMotion.mp4" controls loop></video>
+			</section>
+
+			<!-- Moto armonico-->
+			<section>
+				<h2>Esempio di moto armonico: 2</h2>
+				<video class="r-stretch" src="resources/ModifiedHarmonicMotion.mp4" controls loop></video>
+			</section>
+
+			<!-- Moto circolare-->
+			<section>
+				<h2>Moto circolare vs moto armonico</h2>
+				<video class="r-stretch" src="resources/UniformCircularMotion.mp4" controls loop></video>
+			</section>
+
+			<!-- Moto circolare-->
+			<section>
+				<h3>Moto circolare accelerato e frequenza</h3>
+				<video class="r-stretch" src="resources/AccCircularMotion.mp4" controls loop"></video>
+			</section>
+
+		</div>
+	</div>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				slideNumber: true,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				navigationMode: 'linear',
+
+
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true,
+				},
+
+				chalkboard: { // font-awesome.min.css must be available
+					boardmarkerWidth: 5,
+					chalkWidth: 5,
+					chalkEffect: 0.0,
+					readOnly: false,
+					src: "chalkboard/chalkboard.json",
+					toggleChalkboardButton: { left: "80px" },
+					toggleNotesButton: { left: "130px" },
+					theme: "whiteboard",
+					boardmarkers : [
+									{ color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+									{ color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+									{ color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+									{ color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+									{ color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+									{ color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+									{ color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+							],
+					chalks: [
+							{ color: 'rgba(125,125,125,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+							{ color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+							{ color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+							{ color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+							{ color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+							{ color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+							{ color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+					]
+				},
+				plugins: [ RevealMarkdown, RevealMenu, RevealHighlight, RevealChalkboard, RevealMath],
+			});
+
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+Reveal.getPlugin("RevealChalkboard").configure(config); /// NOT DEFINED?
+//			RevealChalkboard.configure(config); /// NOT DEFINED
+			input.blur();
+		}
+	</script>
+</body>
+</html>
