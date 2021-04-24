@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 
 <head>
@@ -16,7 +16,7 @@
 
 	<link rel="stylesheet" href="../reveal.js/dist/reset.css">
 	<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
-	<link rel="stylesheet" href="../reveal.js/dist/theme/league.css" id="theme">
+	<link rel="stylesheet" href="../reveal.js/dist/theme/black.css" id="theme">
 	<link rel="stylesheet" href="../reveal.js/plugin/highlight/zenburn.css">
 
 	<script src="../reveal.js/dist/reveal.js"></script>
@@ -41,21 +41,21 @@
 
 			<!-- Meccanica -->
 			<section>
-				<h4>Meccanica: corpi in moto, caratteristiche e cause</h4>
+				<h2 class=>Meccanica: corpi in moto, caratteristiche e cause</h2>
 				<p class="fragment fade-in" data-fragment-index="0"> \( \Downarrow \)</p>
-				<h4 class="fragment fade-in" data-fragment-index="0"> Dinamica: relazione tra moto e forze che lo causano</h4>
-				<h4 class="fragment fade-in" data-fragment-index="1"> \( \Downarrow \)</h4>
-				<h4 class="fragment fade-in" data-fragment-index="1">Cinematica: studio del moto a prescindere dalle cause</h4>
-				<h4 class="fragment fade-in" data-fragment-index="2"> \( \Downarrow \)</h4>
-				<h4 class="fragment fade-in" data-fragment-index="2">Cinematica del punto</h4>
-				<h4 class="fragment fade-in" data-fragment-index="3"> \( \Downarrow \)</h4>
-				<h4 class="fragment fade-in" data-fragment-index="3">Cinematica del punto in una dimensione</h4>
+				<h2 class="fragment fade-in" data-fragment-index="0"> Dinamica: relazione tra moto e forze che lo causano</h2>
+				<h2 class="fragment fade-in" data-fragment-index="1"> \( \Downarrow \)</h2>
+				<h2 class="fragment fade-in" data-fragment-index="1">Cinematica: studio del moto a prescindere dalle cause</h2>
+				<h2 class="fragment fade-in" data-fragment-index="2"> \( \Downarrow \)</h2>
+				<h2 class="fragment fade-in" data-fragment-index="2">Cinematica del punto</h2>
+				<h2 class="fragment fade-in" data-fragment-index="3"> \( \Downarrow \)</h2>
+				<h2 class="fragment fade-in" data-fragment-index="3">Cinematica del punto in una dimensione</h2>
 			</section>
 
 			<!-- Grandezze Fondamentali -->
 			<section>
-				<h2>Cinematica: grandezze fondamentali</h2>
-				<ul>
+				<h1>Cinematica: grandezze fondamentali</h1>
+				<ul style="font-size: 2em;">
 					<li style="font-weight: bold">Spazio</li>
 					<li style="font-weight: bold">Tempo</li>
 					<li>Velocità</li>
@@ -65,7 +65,7 @@
 
 			<!-- Sistemi di riferimento -->
 			<section>
-				<h2>Sistemi di riferimento: 1</h2>
+				<h1>Sistemi di riferimento: 1</h1>
 				<video class="r-stretch" controls loop>
 					<source src="resources/ReferenceFrame.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
@@ -74,94 +74,94 @@
 
 			<!-- Sistemi di riferimento -->
 			<section>
-				<h2>Sistemi di riferimento: 2</h2>
+				<h1>Sistemi di riferimento: 2</h1>
 				<div class="r-stack">
-					<p class="fragment fade-out" data-fragment-index="0"> Coordinate cartesiane</p>
-					<p class="fragment current-visible" data-fragment-index="0"> Coordinate sferiche</p>
-					<p class="fragment current-visible" data-fragment-index="1"> Coordinate cilindriche</p>
+					<p style='font-size: 2em;' class="fragment fade-out" data-fragment-index="0"> Coordinate cartesiane</p>
+					<p style='font-size: 2em;' class="fragment current-visible" data-fragment-index="0"> Coordinate sferiche</p>
+					<p style='font-size: 2em;' class="fragment current-visible" data-fragment-index="1"> Coordinate cilindriche</p>
 				</div>
 				<div class="r-stack r-stretch">
-					<img class="fragment fade-out" data-fragment-index="0" style="height: 400px;" src="resources/sistema cartesiano.svg">
-					<img class="fragment current-visible" data-fragment-index="0" style="height: 400px; "src="resources/sistema_sferico.svg">
-					<img class="fragment current-visible" data-fragment-index="1" style="height: 400px;" src="resources/sistema_cilindrico.svg">
+					<img class="fragment fade-out" data-fragment-index="0" style="height: 600px;" src="resources/sistema cartesiano.svg">
+					<img class="fragment current-visible" data-fragment-index="0" style="height: 600px; "src="resources/sistema_sferico.svg">
+					<img class="fragment current-visible" data-fragment-index="1" style="height: 600px;" src="resources/sistema_cilindrico.svg">
 				</div>
 			</section>
 
 			<!-- Spostamento vs distanza -->
 			<section>
-				<h3>Cinematica 1D: Spostamento vs distanza</h3>
-				<ul style="font-size: x-large;">
+				<h1 class="r-fit-text">Cinematica 1D: Spostamento vs distanza</h1>
+				<ul style="font-size: 1.5em;">
 					<li>\( x_{\mathrm{CasaAmico}} = 0 \, (km) = 0 \, (m) \)</li>
 					<li>\( x_{\mathrm{CasaMia}} = 2.1 \, (km) = 2100 \, (m) \)</li>
 					<li>\( x_{\mathrm{Drogheria}} = 6.4 \, (km) = 6400 \, (m) \)</li>
 				</ul>
-				<img src="resources/cinematica_1d.png" alt="cinematica_1d">
+				<img class="r-stretch" src="resources/cinematica_1d.png" alt="cinematica_1d">
 			</section>
 			
 			<!-- Velocita media-->
 			<section>
-				<h2>velocità media</h2>
-				<ul style="font-size: x-large;">
+				<h1>velocità media</h1>
+				<ul style="font-size: 1.5em;">
 					<li>\( \Delta x_{1} = 4 \, (km) = 4000 \, (m) \)</li>
 					<li>\( \Delta x_{2} = 4 \, (km) = 4000 \, (m) \)</li>
 					<li>\( v_{1} = 30 \, (km/h) \approx 8.3 \, (m/s) \)</li>
 					<li>\( v_{2} = 40 \, (km/h) \approx 13.9 \, (m/s) \)</li>
 				</ul>
-				<img src="resources/velocita_media.png" alt="velocita_media">
+				<img class="r-stretch" src="resources/velocita_media.png" alt="velocita_media">
 			</section>
 
 			<!-- Velocita media vs velocita scalare media-->
 			<section>
-				<h3>velocità scalare media vs velocità media</h3>
-				<ul style="font-size: x-large;">
+				<h1 class="r-fit-text">velocità scalare media vs velocità media</h1>
+				<p>
+				<ul style="font-size: 1.5em;">
 					<li>\( \Delta x_{1} = \Delta x_{2} = 100 \, (m) \)</li>
 					<li>\( v_{1} = 10 \, (m/s) \)</li>
 					<li>\( v_{2} = 5  \, (m/s) \)</li>
 				</ul>
+				</p>
 				<img class="r-stretch" src="resources/velocita_media2.png" alt="velocita_media2">
 			</section>
 
 
 			<!-- Interpretazione grafica velocita' media-->
 			<section>
-				<h3>interpretazione grafica della velocità media</h3>
+				<h1 class="r-fit-text">interpretazione grafica della velocità media</h1>
 				<img class="r-stretch" src="resources/velocita_media3.png" alt="velocita_media3">
 			</section>
 
 			<!-- Interpretazione grafica velocita' media-->
 			<section>
-				<h2>velocità istantanea</h2>
-				<p>\[  v(t) = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}= x'(t) = \frac{\mathrm{d}x(t)}{\mathrm{d}t} \]</p>
+				<h1>velocità istantanea</h1>
+				<p style="font-size: 1.5em;">\[  v(t) = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t}= x'(t) = \frac{\mathrm{d}x(t)}{\mathrm{d}t} \]</p>
 				<img class="r-stretch" src="resources/velocita_istantanea.png" alt="velocita_istantanea">
 			</section>
 
 			<!-- Interpretazione grafica velocita' media-->
 			<section>
-				<h3>velocità media vs velocità istantanea</h3>
-				<p>\[ \frac{\Delta x}{\Delta t} \, \mathrm{vs} \, \frac{\mathrm{d}x(t)}{\mathrm{d}t} \]</p>
+				<h1 class="r-fit-text">velocità media vs velocità istantanea</h1>
+				<p style="font-size: 1.5em;">\[ \frac{\Delta x}{\Delta t} \, \mathrm{vs} \, \frac{\mathrm{d}x(t)}{\mathrm{d}t} \]</p>
 				<img class="r-stretch" src="resources/media_vs_istantanea.png" alt="media_vs_istantanea">
 			</section>
 
 			<!-- Interpretazione grafica velocita' media-->
 			<section>
-				<h3>accelerazione media vs accelerazione istantanea</h3>
-				<p>\( a_{\mathrm{m}} = \frac{\Delta v}{\Delta t} \)</p>
-				<p>\( a(t) = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t}= v'(t) = \frac{\mathrm{d}v(t)}{\mathrm{d}t} \)</p>
+				<h1 class="r-fit-text">accelerazione media vs accelerazione istantanea</h1>
+				<p style="font-size: 1.5em;">\( a_{\mathrm{m}} = \frac{\Delta v}{\Delta t} \)</p>
+				<p style="font-size: 1.5em;">\( a(t) = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t}= v'(t) = \frac{\mathrm{d}v(t)}{\mathrm{d}t} \)</p>
 				<img class="r-stretch" src="resources/acc_media_vs_istantanea.png" alt="acc_media_vs_istantanea">
 			</section>
 
 			<!-- Interpretazione grafica velocita' media-->
 			<section>
-				<h3>accelerazione e velocità</h3>
-				<!-- <p>\( a_{\mathrm{m}} = \frac{\Delta v}{\Delta t} \)</p>
-				<p>\( a(t) = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t}= v'(t) = \frac{\mathrm{d}v(t)}{\mathrm{d}t} \)</p> -->
+				<h1>accelerazione e velocità</h1>
 				<img class="r-stretch" src="resources/verso_a_v.png" alt="verso_a_v">
 			</section>
 
 			<!-- Interpretazione grafica velocita' media-->
 			<section>
-				<h3>\( x(t), \, v(t), a(t) \Rightarrow \) Integrali e derivate</h3>
-				<table style="width:800px;">
+				<h1 class="r-fit-text">\( x(t), \, v(t), a(t) \Rightarrow \) Integrali e derivate</h1>
+				<table style="width:1000px; font-size: 1.5em;">
 					<thead>
 						<tr>
 							<td style="text-align: center;">Derivate</td>
@@ -195,8 +195,8 @@
 
 			<!-- Moto uniformemente accelerato-->
 			<section>
-				<h3>Moto uniformemente accelerato</h3>
-				<table style="width:900px; font-size: xx-large;">
+				<h1 class="r-fit-text">Moto uniformemente accelerato</h1>
+				<table style="width:1200px; font-size: 1.5em;">
 					<thead>
 						<tr>
 							<td style="text-align: center;">Integrali</td>
@@ -230,27 +230,27 @@
 
 			<!-- Moto costante-->
 			<section>
-				<h2>Moto Costante</h2>
+				<h1>Moto Costante</h1>
 				<video class="r-stretch" src="resources/StaticMotion.mp4" controls loop></video>
 			</section>
 
 			<!-- Moto rettilineo uniforme-->
 			<section>
-				<h2>Moto Rettilineo uniforme</h2>
+				<h1>Moto Rettilineo uniforme</h1>
 				<video class="r-stretch" src="resources/UniformSpeedMotion.mp4" controls loop></video>
 			</section>
 
 			<!-- Moto rettilineo uniforme-->
 			<section>
-				<h2>Moto uniformemente accelerato</h2>
+				<h1>Moto uniformemente accelerato</h1>
 				<video class="r-stretch" src="resources/UniformAccMotion.mp4" controls loop></video>
 			</section>
 
 			<!-- Moto uniformemente accelerato-->
 			<section>
-				<h3>Caduta libera</h3>
-				<p>\( g = 9.81 \, (m/s^2)\) accelerazione di gravità</p>
-				<table style="width:900px; font-size: xx-large;">
+				<h1>Caduta libera</h1>
+				<p style="font-size: 1.5em;">\( g = 9.81 \, (m/s^2)\) accelerazione di gravità</p>
+				<table style="width:1200px; font-size: 1.5em;">
 					<thead>
 						<tr>
 							<td style="text-align: center;">Integrali</td>
@@ -275,8 +275,8 @@
 							<td style="text-align: center;">\( \Uparrow \, \frac{dx(t)}{dt} \, \Uparrow\)</td>
 						</tr>
 						<tr>
-							<td style="text-align: center;">\( x(t) = x_{0} + v_{0}t - \frac{1}{2}g t^{2} \)</td>
-							<td style="text-align: center;">\( x(t) = x_{0} + v_{0}t - \frac{1}{2}g t^{2} \)</td>
+							<td style="text-align: center;">\( y(t) = y_{0} + v_{0}t - \frac{1}{2}g t^{2} \)</td>
+							<td style="text-align: center;">\( y(t) = y_{0} + v_{0}t - \frac{1}{2}g t^{2} \)</td>
 						</tr>
 					</tbody>
 				</table>
@@ -284,8 +284,8 @@
 
 			<!-- Moto armonico -->
 			<section>
-				<h3>Moto Armonico</h3>
-				<table style="width:1000px; font-size: xx-large;">
+				<h1>Moto Armonico</h1>
+				<table style="width:1200px; font-size: 1.25em;">
 					<thead>
 						<tr>
 							<td style="text-align: center;">Derivate</td>
@@ -315,31 +315,19 @@
 						</tr>
 					</tbody>
 				</table>
-				<p style="font-size: x-large;">\( A \Rightarrow  Ampiezza \) \( \;\;\;\; \omega = 2 \pi f = \frac{2 \pi}{T} \Rightarrow  Frequenza \, Angolare \) \( \;\;\;\; \phi \Rightarrow  Fase \)</p>
+				<p style="font-size: 1.25em;">\( A \Rightarrow  Ampiezza \) \( \;\;\;\; \omega = 2 \pi f = \frac{2 \pi}{T} \Rightarrow  Frequenza \, Angolare \) \( \;\;\;\; \phi \Rightarrow  Fase \)</p>
 			</section>
 
 			<!-- Moto armonico-->
 			<section>
-				<h2>Esempio di moto armonico: 1</h2>
+				<h1>Esempio di moto armonico: 1</h1>
 				<video class="r-stretch" src="resources/SimpleHarmonicMotion.mp4" controls loop></video>
 			</section>
 
 			<!-- Moto armonico-->
 			<section>
-				<h2>Esempio di moto armonico: 2</h2>
+				<h1>Esempio di moto armonico: 2</h1>
 				<video class="r-stretch" src="resources/ModifiedHarmonicMotion.mp4" controls loop></video>
-			</section>
-
-			<!-- Moto circolare-->
-			<section>
-				<h2>Moto circolare vs moto armonico</h2>
-				<video class="r-stretch" src="resources/UniformCircularMotion.mp4" controls loop></video>
-			</section>
-
-			<!-- Moto circolare-->
-			<section>
-				<h3>Moto circolare accelerato e frequenza</h3>
-				<video class="r-stretch" src="resources/AccCircularMotion.mp4" controls loop"></video>
 			</section>
 
 		</div>
@@ -356,6 +344,8 @@
 				center: true,
 				mouseWheel: true,
 				navigationMode: 'linear',
+				width: 1920,
+  				height: 1080,
 
 
 				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
@@ -371,9 +361,11 @@
 					chalkEffect: 0.0,
 					readOnly: false,
 					src: "chalkboard/chalkboard.json",
+					pdfSeparateFragments: false,
 					toggleChalkboardButton: { left: "80px" },
 					toggleNotesButton: { left: "130px" },
-					theme: "whiteboard",
+					theme: "blackboard",
+					grid: { color: 'rgb(127,127,255,0.2)', distance: 80, width: 2},
 					boardmarkers : [
 									{ color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
 									{ color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
