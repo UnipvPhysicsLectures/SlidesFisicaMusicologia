@@ -48,7 +48,7 @@
      fit-margin-bottom="0"
      inkscape:window-width="1920"
      inkscape:window-height="1020"
-     inkscape:window-x="1920"
+     inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1" />
   <metadata
@@ -831,9 +831,7 @@
                    x="61.750202"
                    y="-300.27112"
                    id="tspan4051"
-                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSerif;-inkscape-font-specification:FreeSerif;stroke-width:0.998604">F∙Δs<tspan
-   style="font-size:65%;baseline-shift:sub"
-   id="tspan4049" /></tspan></text>
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSerif;-inkscape-font-specification:FreeSerif;stroke-width:0.998604">F∙ds</tspan></text>
             </g>
             <g
                id="g4063"
