@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Fisica per Musicologia: Lavoro ed Energia</title>
+	<title>Fisica per Musicologia: Magnetismo</title>
 
 	<meta name="description" content="Introduzione">
 	<meta name="author" content="Giovanni Pellegrini">
@@ -52,12 +52,226 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
 
-			<!-- Lavoro ed energia -->
+			<!-- Magnetismo -->
 			<section>
 				<h1 class="r-fit-text">Magnetismo</h1>
 			</section>
 
+			<!-- Esempi di forze magnetiche -->
+			<section>
+				<h1 class="r-fit-text">Esempi di forze magnetiche</h1>
+				<div class="container">
+					<div class="col">
+						<div>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/tC13_BkDieU?start=73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<br>
+						<br>
+						<div>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/F3mY44POVEo?start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col">
+						<br>
+						<p style="font-size: 2.5em;">Magneti Permanenti</p>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<p style="font-size: 2.5em;">Elettromagneti</p>
+					</div>
+				</div>
+			</section>
 
+			<!-- Introduzione al campo magnetico -->
+			<section>
+				<h1>Introduzione al campo magnetico</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img src="resources/magnetic_dipole.svg" alt="">
+					</div>
+					<div class="col">
+						<blockquote>
+							"Analogamente al caso del campo elettrico \( \vec{E} \), è possibile introdurre un campo magnetico \( \vec{B} \). Tuttavia la definizione di \( \vec{B} \) risulta essere differente rispetto a quella di \( \vec{E} \)"
+						</blockquote>
+					</div>
+				</div>
+			</section>
+
+			<!-- Campo magnetico terrestre -->
+			<section>
+				<h1>Campo magnetico terrestre</h1>
+				<img class='r-stretch' src="resources/Earth's_magnetic_field,_schematic.svg" alt="">
+			</section>
+
+			<!-- Introduzione al campo magnetico -->
+			<section>
+				<h1>campo elettrico e campo magnetico</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<div>
+							<img style="width: 400px;" src="resources/electric_dipole.svg" alt="">
+						</div>
+						<div class="r-stack">
+							<img class="fragment fade-out" data-fragment-index="0" style="width: 400px;" src="resources/magnetic_dipole.svg" alt="">
+							<img class="fragment current-visible" data-fragment-index="0" style="width: 400px;" src="resources/magnetic_dipole_2.svg" alt="">
+						</div>
+						
+					</div>
+					<div class="col">
+						<p style="font-size: 2em;"> \[\vec{F}_{el} = q \vec{E} \]</p>
+						<br>
+						<br>
+						<p class="fragment current-visible" data-fragment-index="0" style="font-size: 2em;"> \[ \vec{F}_{mag} = q \, (\vec{v} \times \vec{B})  \] </p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Prodotto vettoriale -->
+			<section>
+				<h1>Definizione di prodotto vettoriale</h1>
+				<img class="r-stretch" src="resources/prodotto_vettoriale.svg" alt="">
+			</section>
+
+			<!-- Moto in un campo magnetico costante -->
+			<section>
+				<h1 class="r-fit-text">Moto in un campo magnetico costante</h1>
+				<img style="width: 500px;" src="resources/mass_spectrometer.jpg" alt="">
+			</section>
+
+			<!-- Moto in un campo magnetico costante
+			<section>
+				<h1 class="r-fit-text">Campo magnetico: il ciclotrone</h1>
+				<img style="height: 700px;" src="resources/ciclotrone.png" alt="">
+			</section> -->
+
+			<!-- Campo magnetico: forza su un filo -->
+			<section>
+				<h2>Campo magnetico: forza magnetica su un filo attraversato da corrente</h2>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img style="width: 450px;" src="resources/forza_su_filo.png" alt="">
+					</div>
+					<div class="col">
+						<p style="font-size: 2.5em;">\[ d \vec{F}_{mag} = i \, d \vec{s} \times \vec{B} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Sorgenti del campo magnetico: legge di biot savart -->
+			<section>
+				<h1>Sorgenti del campo magnetico</h1>
+				<h2>Legge di Biot-Savart</h2>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img style="width: 500px;" src="resources/biot_savart.png" alt="">
+					</div>
+					<div class="col">
+						<p style="font-size: 2.5em;">\[ d \vec{B} =  \frac{\mu_{0}}{4 \pi} \frac{i \, d \vec{s} \times \vec{u}_{r} }{r^{2}} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Campo di un filo infinito percorso da corrente -->
+			<section>
+				<h1>Campo di un filo infinito percorso da corrente</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img style="width: 500px;" src="resources/filo1.png" alt="">
+					</div>
+					<div class="col">
+						<p style="font-size: 2.5em;">\[ B =  \frac{\mu_0 \, i}{2 \pi R} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Campo di un filo infinito percorso da corrente -->
+			<section>
+				<h1>Legge di Ampere</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img style="width: 500px;" src="resources/ampere.png" alt="">
+					</div>
+					<div class="col">
+						<p style="font-size: 2.5em;">\[ \oint_S \vec{B} \cdot d \vec{s}  = \mu_{0} i \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Solenoidi, campo magnetico e teorema di Ampere -->
+			<section>
+				<h1>I solenoidi: 1</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img style="width: 800px;" src="resources/VFPt_cylindrical_coil_real.svg" alt="">
+					</div>
+					<div class="col">
+						<img style="width: 800px;" src="resources/VFPt_cylindrical_magnet_big.svg" alt="">
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Solenoidi, campo magnetico e teorema di Ampere -->
+			<section>
+				<h1>I solenoidi: 2</h1>
+				<img style="width: 800px;" src="resources/VFPt_magnet_B_currents.svg" alt="">
+			</section>
+
+			<!-- Solenoidi, campo magnetico e teorema di Ampere -->
+			<section>
+				<h1>Solenoidi, campo magnetico e teorema di Ampere</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img style="width: 500px;" src="resources/solenoidi.png" alt="">
+					</div>
+					<div class="col">
+						<p style="font-size: 2.5em;">\[ B  = \mu_{0} \, i \, n \]</p>
+						<p style="font-size: 1.25em;">\[ n  = avvolgimenti \, per \, unità \, di \, lunghezza \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Flusso del campo magnetico -->
+			<section>
+				<h1>Flusso del campo magnetico</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<div>
+							<img style="width: 450px;" src="resources/flusso_e.png" alt="">
+						</div>
+						<div>
+							<img style="width: 450px;" src="resources/flusso_b.png" alt="">
+						</div>
+					</div>
+					<div class="col">
+						<p style="font-size: 2.5em;"> \[ \Phi_{B} = \int_{A} \vec{B} \cdot d\vec{A} = 0 \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Legge di faraday -->
+			<section>
+				<h1>Legge di faraday: induzione elettromagnetica</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<img style="width: 450px;" src="resources/faraday1.png" alt="">
+					</div>
+					<div class="col">
+						<p style="font-size: 2em;"> \[ \frac{d \Phi_{B}}{dt}  = \oint_S \vec{E} \cdot d \vec{s} = \mathcal{E} \]</p>
+					</div>
+					<div class="col">
+						<img style="width: 450px;" src="resources/faraday2.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section data-background-iframe="https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_it.html" data-background-interactive>
+				<div style="background-color: rgba(0, 0, 0, 0.0); color: #fff; position:absolute; top:-12em	; width:100%; height:auto;">
+					<h2 style="color:gray">Induzione elettromagnetica</h2>
+				</div>
+			</section>
 
 		</div>
 	</div>
