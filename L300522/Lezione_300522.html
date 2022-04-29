@@ -1,0 +1,662 @@
+ <!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Fisica per Musicologia: Onde Longitudinali</title>
+
+	<meta name="description" content="Onde longitudinali">
+	<meta name="author" content="Giovanni Pellegrini">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="../reveal.js/dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="../reveal.js/plugin/highlight/zenburn.css">
+
+	<script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="../reveal.js/plugin/math/math.js"></script>
+	<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+ 	<script src="../reveal.js-plugins/menu/menu.js"></script>
+	<script src="../reveal.js-plugins/chalkboard/plugin.js"></script>
+	<script src="../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="../reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+	<!-- custom css -->
+	<style>
+		.container{
+			display: flex;
+		}
+		.col{
+			flex: 1;
+		}
+	</style>
+	<!-- end custom css -->
+
+
+</head>
+
+<body>
+
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<!-- Onde elettromagnetiche-->
+			<section>
+				<h1>La radiazione e le onde elettromagnetiche</h1>
+			</section>
+
+			<!-- Campi elettrici e campi magnetici variabili -->
+			<section>
+				<h1 class="r-fit-text">Campi elettrici e campi magnetici variabili</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<br><br>
+						<h2>Legge di faraday</h2>
+						<p style="font-size: 2em;"> \[ \frac{d \Phi_{B}}{dt}  \Rightarrow  \vec{E} \]</p>
+					</div>
+					<div class='col'>
+						<br><br>
+						<h2>Legge di ampere estesa</h2>
+						<p style="font-size: 2em;"> \[ \frac{d \Phi_{E}}{dt}  \Rightarrow \vec{B} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Onde elettromagnetiche: 1 -->
+			<section>
+				<h1 class="r-fit-text">Onde elettromagnetiche: 1</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img height=700 src="resources/EM-Wave.gif" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;"> \[ \begin{cases}
+														 \vec{E} = \vec{E}_{m} \, sin(k x - \omega t) \\
+													     \vec{B} = \vec{B}_{m} \, sin(k x - \omega t) 
+														 \end{cases} \]</p>
+						<br>
+						<p style="font-size: 1.5em;"> \[ \begin{cases}
+														 \vec{E}_{m} \cdot \vec{B}_{m} = 0 \Rightarrow \vec{E}_{m} \, \bot \, \vec{B}_{m} \\
+						 								 \vec{u}_{x} \cdot \vec{E}_{m} = 0 \Rightarrow \vec{u}_{x} \, \bot \, \vec{E}_{m} \\
+						 								 \vec{u}_{x} \cdot \vec{B}_{m} = 0 \Rightarrow \vec{u}_{x} \, \bot \, \vec{B}_{m}
+														\end{cases} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Onde elettromagnetiche: 2 -->
+			<section>
+				<h1 class="r-fit-text">Onde elettromagnetiche: 2</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img height=700 src="resources/EM-Wave.gif" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;"> \[ c = \frac{\omega}{k} = velocità \, della \, luce \]</p>
+						<p style="font-size: 1.5em;"> \[ c = \frac{1}{\sqrt{\varepsilon_{0} \mu_{0}}} \approx 3 \cdot 10^{8} \, m/s \]</p>
+						<p style="font-size: 1.5em;"> \[ c = \frac{E_{m}}{B_{m}} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- La velocità della luce -->
+			<section>
+				<h1 class="r-fit-text">La velocità della luce</h1>
+				<img class="r-stretch" src="resources/einstein.jpg" alt="">
+			</section>
+
+			<!-- Lo spettro elettromagnetico -->
+			<section data-background-image="resources/spectrum.jpg" data-background-size="cover">
+				<div style="background-color: rgba(0, 0, 0, 0.0); color: #fff; position:absolute; top:-12em	; width:100%; height:auto;">
+					<h1 style="background-color: rgba(0, 0, 0, 0.5);"">Lo spettro elettromagnetico</h1>
+				</div>
+			</section>
+
+			<!-- Intensità di un'onda elettromagnetica -->
+			<section>
+				<h1 class="r-fit-text">Intensità di un'onda elettromagnetica</h1>
+				<h2>Il vettore di Poynting</h2>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img height=700 src="resources/intensity.jpg" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;"> \[ \vec{S} = \frac{1}{\mu_{0}} \vec{E} \times \vec{B} \]</p>
+						<p style="font-size: 1.5em;"> \[ I_{ist} = S = \frac{1}{\mu_{0}} E B = \frac{1}{c \mu_{0}} E^{2}  \]</p>
+						<p style="font-size: 1.5em;"> \[ I = S_{avg} = \frac{1}{2 c \mu_{0}} E^{2}_{m} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Polarizzazione delle luce -->
+			<section>
+				<h1>Polarizzazione della luce: 1</h1>
+				<h2>Polarizzazione lineare</h2>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<h3>Polarizzazione verticale</h3>
+						<p>\( \vec{E}_{y}sin(k x - \omega t) \)</p>
+						<video src="resources/vpol_edit.mp4" controls loop></video>
+					</div>
+					<div class='col'>
+						<h3>Polarizzazione orizzontale</h3>
+						<p>\( \vec{E}_{x}sin(k x - \omega t) \)</p>
+						<video src="resources/hpol_edit.mp4" controls loop></video>
+					</div>
+				</div>
+			</section>
+
+			<!-- Polarizzazione delle luce -->
+			<section>
+				<h1>Polarizzazione della luce: 2</h1>
+				<h2>Polarizzazione circolare</h2>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<h3>Polarizzazione destra</h3>
+						<p>\( \vec{E}_{y}sin(k x - \omega t) +  \vec{E}_{x}cos(k x - \omega t) \)</p>
+						<video src="resources/vhpol-2017-05-24_09.52.40.mp4" controls loop></video>
+					</div>
+					<div class='col'>
+						<h3>Polarizzazione sinistra</h3>
+						<p>\( \vec{E}_{y}sin(k x - \omega t) - \vec{E}_{x}cos(k x - \omega t) \)</p>
+						<video src="resources/vhpol-rev-2017-05-24_09.56.32.mp4" controls loop></video>
+					</div>
+				</div>
+			</section>
+
+			<!-- Polarizzazione della luce: 3 -->
+			<section data-background-iframe="https://ophysics.com/l3.html" data-background-interactive>
+				<div style="background-color: rgba(0, 0, 0, 0.5); color: #fff; position:absolute; top:-12em	; width:100%; height:auto;">
+					<h2 style="color: white; font-size: 2.5em;">Polarizzazione della luce: 3</h2>
+				</div>
+  			</section>
+
+			<!-- Un esempio pratico di polarizzazione -->
+			<section>
+				<h1>Un esempio pratico di polarizzazione</h1>
+				<video class="r-stretch" src="resources/polaroid_noaudio.mp4" controls loop></video>
+  			</section>
+
+			<!-- Diffrazione
+			<section data-background-iframe="https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_it.html" data-background-interactive>
+  			</section> -->
+
+			<!-- Principio di Huygens -->
+			<section>
+				<h1>Principio di Huygens</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<iframe style="width:1024px; height:768px" src="https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_it.html" frameborder="0"></iframe>
+					</div>
+					<div class='col'>
+						<img src="resources/huygens1.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!-- Principio di Huygens e la diffrazione -->
+			<section>
+				<h1>Principio di Huygens e la diffrazione</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<iframe style="width:1024px; height:768px" src="https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_it.html" frameborder="0"></iframe>
+					</div>
+					<div class='col'>
+						<img src="resources/huygens2.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!-- Interferenza tra onde elettromagnetiche -->
+			<section>
+				<h1 class="r-fit-text">Interferenza tra onde elettromagnetiche</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<iframe style="width:1024px; height:768px" src="https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference_it.html" frameborder="0"></iframe>
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.25em;"> \[ \begin{cases}
+							\Delta L = d \, sin(\theta) \\
+							d \, sin(\theta) = m \lambda \Rightarrow \, massimi \\
+							d \, sin(\theta) = (m + \frac{1}{2}) \lambda \Rightarrow \, minimi
+							\end{cases} \]</p>
+						<img src="resources/interferenza2.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!-- Diffrazione di raggi x -->
+			<section>
+				<h1>Diffrazione di raggi x</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img width=800 src="resources/xray_diffraction.png" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 2em;"> \( 2 \, d \, sin(\theta) = m \, \lambda \)</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Diffrazione di raggi x -->
+			<section>
+				<h1>Diffrazione di raggi x</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<h3 class="r-fit-text">Diffrazione da singolo cristallo</h3>
+						<img height=600 src="resources/xray1.png" alt="">
+					</div>
+					<div class='col'>
+						<h2>Diffrazione da polveri</h2>
+						<img height=600 src="resources/xray2.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!-- Diffrazione di raggi x -->
+			<section>
+				<h1>Diffrazione di raggi x</h1>
+				<h3>Un esempio reale legato alla conservazione dei beni culturali</h3>
+				<h3>riferito alla corrosione di vetrate medievali</h3>
+				<img class="r-stretch" src="resources/xray3.png" alt="">		
+			</section>
+
+			<!-- Velocità della luce in un mezzo materiale -->
+			<section>
+				<h1 class="r-fit-text">Velocità della luce in un mezzo materiale</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img height=600 src="resources/velocita.png" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;">\( c \Rightarrow Velocit \grave{a} \, nel \, vuoto \)</p>
+						<p style="font-size: 1.5em;">\( v \Rightarrow   Velocit\grave{a} \, nel \, mezzo \)</p>
+						<p style="font-size: 1.5em;">\( \boxed{ n = \frac{c}{v} \,  indice \, di \, rifrazione }\)</p>
+						<p style="font-size: 1.5em;">\( \boxed{ \lambda_{n} = \frac{\lambda_{0}}{n} }\)</p>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- Riflessione e rifrazione della luce -->
+			<section>
+				<h1 class="r-fit-text">Riflessione e rifrazione della luce</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img height=600 src="resources/riflessione_rifrazione.png" alt="">
+					</div>
+					<div class='col'>
+						<h3>Legge di riflessione</h3>
+						<p style="font-size: 1.5em;">\( \theta_{i} = \theta_{r} \)</p>
+						<br>
+						<h3>Legge di snell</h3>
+						<p style="font-size: 1.5em;"> \[ \begin{cases}
+							\theta_{1} = \theta_{i} \\
+							\theta_{2} = \theta_{t} \\
+							n_{1} \, sin(\theta_{1}) = n_{2} \, sin(\theta_{2})
+							\end{cases} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Legge di Snell: n1<n2 -->
+			<section>
+				<h1 class="r-fit-text">Legge di Snell: dall'aria al vetro </h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img height=600 src="resources/snell1.png" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 2.5em;">\( n_{1} < n_{2} \)</p>
+						<p style="font-size: 2.5em;">\( \Downarrow \)</p>
+						<p style="font-size: 2.5em;">\( \theta_{1} > \theta_{2} \)</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Legge di Snell: n1>n2 -->
+				<section>
+					<h1 class="r-fit-text">Legge di Snell: dal vetro all'aria </h1>
+					<div class="container" style="align-items:center;">
+						<div class='col'>
+							<img height=600 src="resources/snell2.png" alt="">
+						</div>
+						<div class='col'>
+							<p style="font-size: 2.5em;">\( n_{1} > n_{2} \)</p>
+							<p style="font-size: 2.5em;">\( \Downarrow \)</p>
+							<p style="font-size: 2.5em;">\( \theta_{1} < \theta_{2} \)</p>
+						</div>
+					</div>
+				</section>
+
+			<!-- Riflessione interna totale -->
+			<section>
+				<h1 class="r-fit-text">Riflessione interna totale</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<div class="r-stack">
+							<img class="fragment fade-out" data-fragment-index="0" src="resources/tir.png" height="500">
+							<img class="fragment current-visible" data-fragment-index="0" src="resources/tir2.jpg" height="500">
+							<img class="fragment current-visible" data-fragment-index="1" src="resources/tir3.gif" height="500">
+						</div>
+					</div>
+					<div class='col'>
+						<h2>Angolo Critico</h2>
+						<p style="font-size: 2.5em;">\( sin(\theta_{0}) < \frac{n_{2}}{n_{1}} \)</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Fibre ottiche e riflessione interna totale -->
+			<section>
+				<h1 class="r-fit-text">Fibre ottiche e riflessione interna totale</h1>
+					<div class="r-stack">
+						<img class="fragment fade-out" data-fragment-index="0" src="resources/optical_fiber.jpg" height="800">
+						<img class="fragment current-visible" data-fragment-index="0" src="resources/optical_fiber1.jpeg" height="800">
+					</div>
+			</section>
+
+			<!-- Dispersione della luce -->
+			<section>
+				<h1 class="r-fit-text">Dispersione della luce</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<div class="r-stack">
+							<img class="fragment fade-out" data-fragment-index="0" src="resources/darkside.jpg" width="800">
+							<img class="fragment current-visible" data-fragment-index="0" src="resources/dispersion.jpg" width="800">
+							<img class="fragment current-visible" data-fragment-index="1" src="resources/dispersion2.png" width="600">
+						</div>
+					</div>
+					<div class='col'>
+						<h3>Legge di snell</h3>
+						<p style="font-size: 1.25em;"> \[ n_{1,\lambda} \, sin(\theta_{1,\lambda}) = n_{2,\lambda} \, sin(\theta_{2,\lambda})\]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- La rifrazione e la luce come onda -->
+			<section>
+				<h1 class="r-fit-text">La rifrazione e la luce come onda</h1>
+					<img src="resources/rifrazione_huygens.png" height="600">
+			</section>
+
+			<!-- Diffrazione da singola fenditura -->
+			<section>
+				<h1 class="r-fit-text">Diffrazione da singola fenditura</h1>
+					<img class="r-stretch" src="resources/Diffraction_of_a_single_slit.jpg">
+			</section>
+
+			<!-- Posizione del primo minimo d'intensità -->
+			<section>
+				<h1 class="r-fit-text">Posizione del primo minimo d'intensità</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="background-color: white;" src="resources/Single_Slit_Diffraction.svg" width="800">
+					</div>
+					<div class='col'>
+						<p style="font-size: 2.5em;"> \[ \frac{d}{2}sin(\theta) =\frac{\lambda}{2} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Posizione dei minimi d'intensità -->
+			<section>
+				<h1 class="r-fit-text">Posizione dei minimi d'intensità</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="background-color: white;" src="resources/Single_Slit_Diffraction.svg" width="800">
+					</div>
+					<div class='col'>
+						<p style="font-size: 2.5em;"> \[ d \, sin(\theta) = m \, \lambda \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Intensità della diffrazione di singola fenditura -->
+			<section>
+				<h1 class="r-fit-text">Intensità della diffrazione di singola fenditura</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="background-color: white;" src="resources/Single_Slit_Diffraction.svg" width="800">
+					</div>
+					<div class='col'>
+						<p style="font-size: 2em;"> \[ \begin{cases} 
+							I(\theta) = I_{m} \left( \frac{sin(\alpha)}{\alpha} \right)^{2}  \\
+							\alpha = \frac{\pi d}{\lambda}sin(\theta)
+							\end{cases} \]</p>
+					</div>
+				</div>
+			</section> 
+
+			<!-- Diffrazione e risoluzione di un microscopio -->
+			<section>
+				<h1 class="r-fit-text">Diffrazione e risoluzione di un microscopio</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img height="800" src="resources/single_slit_diffraction.gif">
+					</div>
+					<div class='col'>
+						<blockquote>"La risoluzione di un microscopio è proporzionale alla lunghezza d'onda della luce utilizzata."</blockquote>
+						<p style="font-size: 2.5em;"> \[ r \propto \lambda \]</p>
+					</div>
+				</div>		
+			</section>
+
+			<!-- La luce come particella: i fotoni -->
+			<section>
+				<h1 class="r-fit-text">La luce come particella: i fotoni</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img width="800" src="resources/photon.gif">
+					</div>
+					<div class='col'>
+						<h3>Energia di un fotone</h3>
+						<p style="font-size: 1.5em;"> \( E_{f} = h \, f \)</p>
+						<p style="font-size: 1.5em;"> \( E_{\omega} = \hbar \, \omega \)</p>
+						<br>
+						<h3>Costante di Planck</h3>
+						<p style="font-size: 1.5em;"> \( h = 6.626 \cdot 10^{-34} [J \cdot s] \)</p>
+						<p style="font-size: 1.5em;"> \[ \hbar = \frac{h}{2 \pi} = 1.054 \cdot 10^{-34} [J \cdot s] \]</p>
+					</div>
+				</div>		
+			</section>
+
+			<!-- Diffrazione da singola fenditura con fotoni singoli-->
+			<section>
+				<h1 class="r-fit-text">Diffrazione da singola fenditura con fotoni singoli</h1>
+				<iframe width="1130" height="730" src="https://www.youtube.com/embed/I9Ab8BLW3kA?start=407" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+
+			<!-- Interazione tra fotoni e materia: assorbimento e fluorescenza -->
+			<section>
+				<h1 class=>Interazione tra fotoni e materia: assorbimento e fluorescenza</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img width="800" src="resources/Bohr_atom_animation.gif">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;"> \[ E_{finale} - E_{iniziale} = h \, f \]</p>
+						<p style="font-size: 1.5em;"> \[ 1 \, eV = 1.602176634 \cdot 10^{-19} \, J \]</p>
+					</div>
+				</div>		
+			</section>
+
+			<!-- Interazione tra fotoni e materia: assorbimento e fluorescenza -->
+			<section>
+				<h1 class=>Un esempio di fluorescenza a raggi X</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img width="800" src="resources/esempio_di_spettro x.png">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;"> \[ E_{Si} \approx 1.80 \, KeV \]</p>
+						<p style="font-size: 1.5em;"> \[ E_{S} \approx 2.48 \, KeV \]</p>
+						<p style="font-size: 1.5em;"> \[ E_{Mn} \approx 5.89 \, KeV \]</p>
+						<p style="font-size: 1.5em;"> \[ E_{Fe} \approx 6.40 \, KeV \]</p>
+					</div>
+				</div>		
+			</section>
+
+			<!-- Ritratto di dama e i raggi x -->
+			<section>
+				<h1 class=>Ritratto di dama e i raggi x</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<h3>Dipinto</h3>
+						<img height="700" src="resources/quadro.png">
+					</div>
+					<div class='col'>
+						<h3>Mappa raggi x: \( Cu \)</h3>
+						<img height="700" src="resources/quadro_cu.png">
+					</div>
+					<div class='col'>	
+						<h3>Mappa raggi x: \( Fe \)</h3>
+						<img height="700" src="resources/quadro_fe.png">
+					</div>
+				</div>		
+			</section>
+
+			<!-- Dualità onda materia-->
+			<section>
+				<h1 class="r-fit-text">Dualità onda particella</h1>
+				<blockquote>Luce e materia possono manifestarsi come onda o come particella, a seconda del tipo di strumento utilizzato per l'osservazione.</blockquote>
+				<p style="font-size: 1.5em;"> \[ \lambda_{elettrone} \approx \lambda_{raggi-x} \]</p>
+				<img src="resources/duality.png" alt="">
+			</section>
+
+			<!-- Dualità onda materia-->
+			<section>
+				<h1 class="r-fit-text">Dualità onda particella</h1>
+				<video src="resources/wave_particle_duality.webm" controls muted></video>
+			</section>
+
+			<!-- Il microscopio elettronico -->
+			<section>
+				<h1 class=>Il microscopio elettronico</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img width="800" src="resources/glass.png">
+					</div>
+					<div class='col'>
+						<p style="font-size: 2.5em;"> \[ \lambda_{elettrone} \ll \lambda_{visibile} \]</p>
+					</div>
+				</div>		
+			</section>
+
+			<!-- Dualità onda materia-->
+			<section>
+				<h1 class="r-fit-text">Fluorescenza x generata da elettroni</h1>
+				<img src="resources/glass_xray_map.png" alt="">
+			</section>
+
+			<!-- Appelli d'esame-->
+			<section>
+				<h1>Appelli d'esame</h1>
+				<ul style="font-size: 1.5em;">
+					<li>23/06/2021 - Ore 10.00</li>
+					<li>24/06/2021 - Ore 10.00</li>
+					<li>16/07/2021 - Ore 10.00</li>
+					<li>15/09/2021 - Ore 10.00</li>
+				</ul>
+			</section>
+
+			<!-- Appelli d'esame-->
+			<section>
+				<h1>Modalità d'esame</h1>
+				<blockquote style="font-size: 2em;">
+					Esame orale, scegliendo un tema da approfondire legato a problemi inerenti il corso in Restauro
+				</blockquote>
+			</section>
+
+			<!-- Prossimo ricevimento-->
+			<section>
+				<h1>Prossimo ricevimento</h1>
+				<ul style="font-size: 1.5em;">
+					<li>Giovedì 27 maggio dalle ore 14.00 alle ore 16.00</li>
+				</ul>
+			</section>
+
+		</div>
+	</div>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				slideNumber: true,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				navigationMode: 'linear',
+				width: 1920,
+  				height: 1080,
+				minScale: 0.1,
+  				maxScale: 4.0,
+
+
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true,
+				},
+
+				chalkboard: { // font-awesome.min.css must be available
+					boardmarkerWidth: 4,
+					chalkWidth: 4,
+					chalkEffect: 0.0,
+					readOnly: false,
+					src: "chalkboard/chalkboard.json",
+					pdfSeparateFragments: true,
+					toggleChalkboardButton: { left: "80px" },
+					toggleNotesButton: { left: "130px" },
+					// toggleChalkboardButton: true,
+					// toggleNotesButton: true,
+					theme: "blackboard",
+					// background: [ 'rgba(0,0,0,0.0)','rgba(255,255,255,0.0)'],
+					boardmarkers : [
+									{ color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+									{ color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+									{ color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+									{ color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+									{ color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+									{ color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+									{ color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+							],
+					chalks: [
+							{ color: 'rgba(125,125,125,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+							{ color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+							{ color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+							{ color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+							{ color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+							{ color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+							{ color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+					]
+				},
+				plugins: [ RevealMarkdown, RevealMenu, RevealHighlight, RevealChalkboard, RevealMath],
+			});
+
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+Reveal.getPlugin("RevealChalkboard").configure(config); /// NOT DEFINED?
+//			RevealChalkboard.configure(config); /// NOT DEFINED
+			input.blur();
+		}
+	</script>
+</body>
+</html>

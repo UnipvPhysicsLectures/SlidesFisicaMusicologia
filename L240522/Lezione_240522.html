@@ -1,0 +1,382 @@
+ <!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Fisica per Musicologia: Onde Longitudinali</title>
+
+	<meta name="description" content="Onde longitudinali">
+	<meta name="author" content="Giovanni Pellegrini">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="../reveal.js/dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="../reveal.js/plugin/highlight/zenburn.css">
+
+	<script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="../reveal.js/plugin/math/math.js"></script>
+	<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+ 	<script src="../reveal.js-plugins/menu/menu.js"></script>
+	<script src="../reveal.js-plugins/chalkboard/plugin.js"></script>
+	<script src="../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="../reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+	<!-- custom css -->
+	<style>
+		.container{
+			display: flex;
+		}
+		.col{
+			flex: 1;
+		}
+	</style>
+	<!-- end custom css -->
+
+
+</head>
+
+<body>
+
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<!-- Onde-->
+			<section>
+				<h1 style="font-size: 5em;">Onde</h1>
+				<h2 class="r-fit-text">introduzione alle onde longitudinali</h2>
+			</section>
+
+			<!-- Onde trasversali e longitudinali-->
+			<section>
+				<h1>Onde trasversali e longitudinali</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<h3>Onde trasversali</h3>
+						<img style="width: 400px;" src="resources/transverse_wave.gif" alt="">
+					</div>
+					<div class='col'>
+						<h3>Onde longitudinali</h3>
+						<img style="width: 400px;" src="resources/longitudinal_wave.gif" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!-- Onde trasversali: tempo-->
+			<section>
+				<h1 class="r-fit-text"> Cenni di Proprietà elastiche dei materiali</h1>
+				<p><a href="https://www.youtube.com/watch?v=JT0wx27J9xs">Link all'intero video</a></p>
+				<video class='r-stretch' src="resources/elastic.mp4" controls loop></video>
+			</section>
+
+			<!-- Modulo di Young -->
+			<section>
+				<h1>Modulo di Young \( (E) \)</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="height: 700px;" src="resources/modulo_di_young.png" alt="">
+					</div>
+					<div class='col'>
+						<h2>Deformazione longitudinale</h2>
+						<p style="font-size: 2em;">\[ \frac{F}{S} = E \frac{\Delta l}{l} \]</p>
+						<p style="font-size: 1em;">\( \Downarrow \)</p>
+						<p style="font-size: 2em;">
+							\[ \begin{cases}
+							   F  = k \, \Delta x  \\
+							   F = \left( \frac{E \, S}{l} \right) \Delta l
+							  \end{cases} \]
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Modulo di Taglio -->
+			<section>
+				<h1>Modulo di Taglio \( (G) \)</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="height: 700px;" src="resources/modulo_di_taglio.png" alt="">
+					</div>
+					<div class='col'>
+						<h2>Deformazione di taglio</h2>
+						<p style="font-size: 2em;">\[ \frac{F}{S} = G \frac{\Delta x}{l} \]</p>
+						<p style="font-size: 1em;">\( \Downarrow \)</p>
+						<p style="font-size: 2em;">
+							\[ \begin{cases}
+							   F  = k \, \Delta x  \\
+							   F = \left( \frac{G \, S}{l} \right) \Delta x
+							  \end{cases} \]
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Modulo di Compressibilita' -->
+			<section>
+				<h1>Modulo di Compressibilità \( (B) \)</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="height: 700px;" src="resources/modulo_di_compressibilita.png" alt="">
+					</div>
+					<div class='col'>
+						<h2>Deformazione di volume</h2>
+						<p style="font-size: 2.5em;">\[ \Delta P = - B \frac{\Delta V}{V} \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Modulo di Compressibilita': gas ideale a temperatura costante -->
+			<section>
+				<h1>Modulo di Compressibilità</h1>
+				<h2>Gas ideale a temperatura costante</h2>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="height: 600px;" src="resources/sound_wave.gif" alt="">
+					</div>
+					<div class='col'>
+						<div class='col'>
+							<p style="font-size: 1.25em;">
+								\[ \begin{cases}
+								   P V  = n R T  \\
+								   (P + \Delta P) (V + \Delta V)  = n R T
+								  \end{cases} \]
+							</p>
+							<p style="font-size: 1em;">\( \Downarrow \)</p>
+							<p style="font-size: 1.25em;">\( P V = (P + \Delta P) (V + \Delta V)  \)</p>
+							<p style="font-size: 1em;">\( \Downarrow \)</p>
+							<p style="font-size: 1.25em;">\( \frac{\Delta P}{P} = -\frac{\Delta V}{V}; \; \Delta P = - B \frac{\Delta V}{V} \)</p>
+							<p style="font-size: 1em;">\( \Downarrow \)</p>
+							<p style="font-size: 1.25em;">\( \boxed{B = P} \)</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Onda trasversale sinusoidale-->
+			<section>
+				<h1>Velocità di un'onda</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<h2>Corda tesa</h2>
+						<p style="font-size: 1.5em;">\[ \sqrt{\frac{T}{\mu}} \]</p>
+						<img style="height: 400px;" src="resources/sine_wave.gif" alt="">
+					</div>
+					<div class='col'>
+						<h2>Barra metallica</h2>
+						<p style="font-size: 1.5em;">\[ \sqrt{\frac{E}{\rho}} \]</p>
+						<img style="height: 400px;" src="resources/longitudinal_wave.gif" alt="">
+					</div>
+					<div class='col'>
+						<h2>Gas</h2>
+						<p style="font-size: 1.5em;">\[ \sqrt{\frac{B}{\rho}} = \sqrt{\frac{P}{\rho}} \]</p>
+						<img style="height: 400px;" src="resources/sound_wave.gif" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!-- Pipistrelli, densità dell'aria e velocità del suono -->
+			<section>
+				<h1 class="r-fit-text" >Pipistrelli, densità dell'aria e velocità del suono</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<p style="font-size: 1.25em;">\[ v_{aria} = \sqrt{\frac{P_{atm}}{\rho_{aria}}} \approx 300 \, m/s  \]</p>
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.25em;">\[ v_{elio} = \sqrt{\frac{P_{atm}}{\rho_{elio}}} \approx 800 \, m/s  \]</p>
+					</div>
+				</div>
+				<p><a href="https://www.pnas.org/content/118/19/e2024352118">Link all'articolo originale</a></p>
+				<img class="r-stretch" src="resources/bats.png" alt="">
+			</section>
+
+			<!-- Effetti della densità del mezzo -->
+			<section>
+				<h1 class="r-fit-text" >Effetti della densità del mezzo</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<h2>Elio</h2>
+						<p style="font-size: 1.25em;">\[ f_{elio} = \frac{v_{elio}}{\lambda} \]</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/xgxwLQsM0iM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class='col'>
+						<h2>Esafluoruro di zolfo</h2>
+						<p style="font-size: 1.25em;">\[ f_{SF_{6}} = \frac{v_{SF_{6}}}{\lambda}  \]</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/vBIYUeiKAXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+
+			<!-- Onde longitudinali sinusoidali -->
+			<section>
+				<h1 class="r-fit-text" >Onde longitudinali sinusoidali</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="width: 600px;" src="resources/sine_longitudinal.gif" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 2em;">\[ s(x,t) = s_{m} cos(k x - \omega t) \]</p>
+						<br><br>
+						<p style="font-size: 2em;">\[ \Delta P(x,t) = \Delta P_{m} sin(k x - \omega t) \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Interferenza tra onde sinusoidali-->
+			<section>
+				<h1>Interferenza tra onde sinusoidali</h1>
+				<div class="container" style="align-items:center;">
+					<div class="col">
+						<p style="font-size: 1.25em;"> \( s_{1}(x,t) = s_{m} cos(kx - \omega t) \)</p>
+					</div>
+					<div class="col">
+						<p style="font-size: 1.25em;"> \( s_{2}(x,t) = s_{m} cos(kx - \omega t + \phi) \)</p>
+					</div class="col">				
+				</div>
+				<p style="font-size: 1.25em;">\[ \boxed{y(x,y) = s_{1}(x,t) + s_{2}(x,t) = 2 s_{m} cos \left( \frac{\phi}{2} \right) cos \left( kx - \omega t + \frac{\phi}{2} \right)} \]</p>
+			</section>
+
+			<!-- Intensità di un'onda -->
+			<section>
+				<h1 class="r-fit-text" >Intensità di un'onda</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="width: 600px;" src="resources/longitudinal_wave.gif" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;">\[ I = \frac{P}{S} \; [W/m^2] \]</p>
+						<p style="font-size: 1.5em;">\[ I = \frac{1}{2} \, \rho \, v_{onda} \, \omega^{2} \, s_{m}^{2}  \]</p>
+						<p style="font-size: 1.5em;">\[ \beta = 10 \cdot log \left( \frac{I}{I_{0}} \right); \; I_{0} = 10^{-12} W/m^{2}  \]</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Interferenza e onde stazionarie-->
+			<section>
+				<h1 class="r-fit-text">Interferenza, onde stazionarie e risonanze</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img src="resources/pipe_waves.png" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.2em;">\( s_{1}(x,t) = s_{m} cos(kx - \omega t) \)</p>
+						<p style="font-size: 1.2em;">\( s_{2}(x,t) = s_{m} cos(kx + \omega t) \)</p>
+						<p style="font-size: 1.2em;">\( s(x,t) = s_{1}(x,t) + s_{2}(x,t) \)</p>
+						<p style="font-size: 1.2em;">\( \Downarrow \)</p>
+						<p style="font-size: 1.5em;">\[ \boxed{s(x,t) = [ 2 s_{m} cos(kx) ] cos( \omega t)} \]</p>
+						<p style="font-size: 1.2em;">
+							\[ \boxed{\begin{cases}  \lambda = \frac{2L}{n}; \; n=1,2,3... \; due \, aperture \\
+						  	                         \lambda = \frac{4L}{n}; \; n=1,3,5... \; un'apertura
+							   \end{cases}} \]
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Battimenti -->
+			<section>
+				<h1>Battimenti</h1>
+				<div class="container" style="align-items:center;">
+					<div class='col'>
+						<img style="width: 600px;" src="resources/battimenti.gif" alt="">
+					</div>
+					<div class='col'>
+						<p style="font-size: 1.5em;">\( s_{1}(t) = s_{m} cos(\omega_{1} t) \)</p>
+						<p style="font-size: 1.5em;">\( s_{2}(t) = s_{m} cos(\omega_{2} t) \)</p>
+						<p style="font-size: 1.5em;">\( s(t) = s_{1}(t) + s_{2}(	t) \)</p>
+						<p style="font-size: 1.5em;">\( \Downarrow \)</p>
+						<p style="font-size: 1.5em;">
+							\[ \boxed{\begin{cases}  
+								s(t) = [2 s_{m} cos(\omega_{a} t)] cos(\omega_{b} t) \\
+						  	    \omega_{a} = \frac{1}{2}(\omega_{1}-\omega_{2}) \\
+								\omega_{b} = \frac{1}{2}(\omega_{1}+\omega_{2})
+							   \end{cases}} \]
+						</p>
+					</div>
+				</div>
+			</section>
+				
+			</section>
+
+		</div>
+	</div>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				slideNumber: true,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+				navigationMode: 'linear',
+				width: 1920,
+  				height: 1080,
+				minScale: 0.1,
+  				maxScale: 4.0,
+
+
+				menu: { // Menu works best with font-awesome installed: sudo apt-get install fonts-font-awesome
+					themes: false,
+					transitions: false,
+					markers: true,
+					hideMissingTitles: true,
+				},
+
+				chalkboard: { // font-awesome.min.css must be available
+					boardmarkerWidth: 4,
+					chalkWidth: 4,
+					chalkEffect: 0.0,
+					readOnly: false,
+					src: "chalkboard/chalkboard.json",
+					pdfSeparateFragments: true,
+					toggleChalkboardButton: { left: "80px" },
+					toggleNotesButton: { left: "130px" },
+					// toggleChalkboardButton: true,
+					// toggleNotesButton: true,
+					theme: "blackboard",
+					// background: [ 'rgba(0,0,0,0.0)','rgba(255,255,255,0.0)'],
+					boardmarkers : [
+									{ color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+									{ color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+									{ color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+									{ color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+									{ color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+									{ color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+									{ color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+							],
+					chalks: [
+							{ color: 'rgba(125,125,125,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+							{ color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+							{ color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+							{ color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+							{ color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+							{ color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+							{ color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+					]
+				},
+				plugins: [ RevealMarkdown, RevealMenu, RevealHighlight, RevealChalkboard, RevealMath],
+			});
+
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+Reveal.getPlugin("RevealChalkboard").configure(config); /// NOT DEFINED?
+//			RevealChalkboard.configure(config); /// NOT DEFINED
+			input.blur();
+		}
+	</script>
+</body>
+</html>
